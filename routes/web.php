@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+})->name('home');
+
+Route::resource('userChart', 'UserChartController');
+Route::resource('geoChart', 'GeoChartsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
