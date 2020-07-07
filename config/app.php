@@ -176,8 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
-        Cornford\Googlmapper\MapperServiceProvider::class,
-
+        Jimmyjs\ReportGenerator\ServiceProvider::class,
     ],
 
     /*
@@ -231,7 +230,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
         'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
-        'Mapper' => Cornford\Googlmapper\Facades\MapperFacade::class,
+        'PdfReport' => Jimmyjs\ReportGenerator\Facades\PdfReportFacade::class,
+        'ExcelReport' => Jimmyjs\ReportGenerator\Facades\ExcelReportFacade::class,
+        'CSVReport' => Jimmyjs\ReportGenerator\Facades\CSVReportFacade::class,
     ],
 
 ];
