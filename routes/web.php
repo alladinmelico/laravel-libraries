@@ -9,6 +9,7 @@ Route::get('/', function () {
 Route::resource('userChart', 'UserChartController');
 Route::resource('geoChart', 'GeoChartsController');
 Route::resource('pusher', 'PusherController');
+Route::resource('spatie', 'SpatieController');
 
 Auth::routes();
 

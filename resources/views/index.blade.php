@@ -55,6 +55,17 @@
                     <p class="card-text"><a href="https://unisharp.github.io/laravel-filemanager/installation">Reference</a></p>
                 </div>
             </div>
+
+            <div class="card w-25 m-2">
+                <a href="{{ route('spatie.index') }}"><img class="card-img-top" src="https://camo.githubusercontent.com/c0083546776cef31955a67cd716c766a52dcd593/68747470733a2f2f7370617469652e6769746875622e696f2f696d6167652d6f7074696d697a65722f6578616d706c65732f6c6f676f2e706e67" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Spatie Image Manipulation</h4>
+                    <p>Image manipulation doesn’t have to be hard.
+                        This PHP package makes it super easy to apply common manipulations to images like resizing,
+                        cropping and adding effects.</p>
+                    <p class="card-text"><a href="https://docs.spatie.be/image/v1/installation-and-setup/">Reference</a></p>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
