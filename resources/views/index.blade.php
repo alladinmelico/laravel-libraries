@@ -37,6 +37,24 @@
                     <p class="card-text"><a href="https://github.com/Jimmy-JS/laravel-report-generator/blob/master/readme.md">Reference</a></p>
                 </div>
             </div>
+
+            <div class="card w-25 m-2">
+                <a href="{{ route('pusher.index') }}"><img class="card-img-top" src="https://djmmlc8gcwtqv.cloudfront.net/imgs/tutorials/meta-pusher-square-logo.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Pusher real time notifications</h4>
+                    <p>Replicating in-app notification system by creating a web notifications system using Laravel and Pusher.</p>
+                    <p class="card-text"><a href="https://pusher.com/tutorials/web-notifications-laravel-pusher-channels">Reference</a></p>
+                </div>
+            </div>
+
+            <div class="card w-25 m-2">
+                <a href="{{ route('unisharp.lfm.') }}"><img class="card-img-top" src="https://camo.githubusercontent.com/91c5bdf34b2ca9d250aaf92cd15fcd0904418fcd/68747470733a2f2f756e6973686172702e6769746875622e696f2f6c61726176656c2d66696c656d616e616765722f696d616765732f6c6f676f5f766572746963616c5f636f6c6f7265642e706e67" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Unisharp laravel filemanager</h4>
+                    <p>It's like Dropbox for your Laravel app </p>
+                    <p class="card-text"><a href="https://unisharp.github.io/laravel-filemanager/installation">Reference</a></p>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

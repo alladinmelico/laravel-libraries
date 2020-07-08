@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use PdfReport;
+use ExcelReport;
 
 class ReportsController extends Controller
 {
@@ -43,7 +43,7 @@ class ReportsController extends Controller
         ];
 
         // Generate Report with flexibility to manipulate column class even manipulate column value (using Carbon, etc).
-        return PdfReport::of($title, $meta, $queryBuilder, $columns)
+        return ExcelReport::of($title, $meta, $queryBuilder, $columns)
                         ->editColumn('Registered At', [ // Change column class or manipulate its data for displaying to report
                             'displayAs' => function($result) {
                                 return $result->registered_at;

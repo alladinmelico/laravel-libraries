@@ -34,7 +34,8 @@
 		"laravel/ui": "^2.1",
 		"maatwebsite/excel": "^3.1",
 		"psr/simple-cache": "^1.0",
-		"pusher/pusher-php-server": "^4.1"
+		"pusher/pusher-php-server": "^4.1",
+		"unisharp/laravel-filemanager": "^2.1"
 	},
 	"require-dev": {
 		"facade/ignition": "^2.0",
