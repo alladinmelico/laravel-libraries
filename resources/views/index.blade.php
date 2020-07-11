@@ -66,6 +66,30 @@
                     <p class="card-text"><a href="https://docs.spatie.be/image/v1/installation-and-setup/">Reference</a></p>
                 </div>
             </div>
+
+            <div class="card w-25 m-2">
+            <a href="{{ route('voyager.dashboard') }}"><img class="card-img-top"
+                    src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/01/148399252401.jpeg" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Voyager Laraadmin</h4>
+                    <p>Voyager is simply an admin for your Laravel app.
+                        Whatever you want your app to do on the front-end is completely up to you.
+                        You are in control of your application and you can use Voyager to make your life easier by adding data,
+                        editing users, creating menus, and many other administrative tasks.</p>
+                    <p class="card-text"><a href="https://voyager-docs.devdojo.com/getting-started/installation">Reference</a></p>
+                </div>
+            </div>
+
+            <div class="card w-25 m-2">
+            <a href="{{ route('voyager.dashboard') }}"><img class="card-img-top"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqkvyWiUPIfsDEMgU1zFtXSFJIo_RZ0pAU_w&usqp=CAU" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h4 class="card-title">Spatie Laravel Menu</h4>
+                    <p>The spatie/menu package provides a fluent interface to build menus of any size in your php application.
+                         If you’re building your app with Laravel, the spatie/laravel-menu provides some extra treats.</p>
+                    <p class="card-text"><a href="https://docs.spatie.be/menu/v2/introduction/">Reference</a></p>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

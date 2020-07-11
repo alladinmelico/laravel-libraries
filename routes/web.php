@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+
 Route::get('/', function () {
     return view('index');
 })->name('home');
@@ -24,3 +29,4 @@ Route::get('test', function () {
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
+
