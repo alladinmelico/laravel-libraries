@@ -81,7 +81,7 @@
             </div>
 
             <div class="card w-25 m-2">
-            <a href="{{ route('voyager.dashboard') }}"><img class="card-img-top"
+            <a href="{{ route('menu.index') }}"><img class="card-img-top"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqkvyWiUPIfsDEMgU1zFtXSFJIo_RZ0pAU_w&usqp=CAU" alt="Card image cap"></a>
                 <div class="card-body">
                     <h4 class="card-title">Spatie Laravel Menu</h4>

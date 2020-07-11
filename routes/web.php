@@ -15,6 +15,7 @@ Route::resource('userChart', 'UserChartController');
 Route::resource('geoChart', 'GeoChartsController');
 Route::resource('pusher', 'PusherController');
 Route::resource('spatie', 'SpatieController');
+Route::resource('menu', 'MenuController');
 
 Auth::routes();
 
@@ -29,4 +30,3 @@ Route::get('test', function () {
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
-
