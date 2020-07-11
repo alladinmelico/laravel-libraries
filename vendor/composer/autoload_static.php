@@ -89,9 +89,11 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        'd9fc00ffac3dc4b7868e8efb0efdc85c' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -178,6 +180,7 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
             'Psr\\Http\\Message\\' => 17,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
@@ -201,6 +204,7 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'L' => 
         array (
             'League\\Glide\\' => 13,
+            'League\\Flysystem\\Cached\\' => 24,
             'League\\Flysystem\\' => 17,
             'League\\CommonMark\\' => 18,
             'Laravel\\Ui\\' => 11,
@@ -265,12 +269,15 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
             'Composer\\CaBundle\\' => 18,
             'Composer\\' => 9,
             'Complex\\' => 8,
+            'Collective\\Html\\' => 16,
             'Carbon\\' => 7,
         ),
         'B' => 
         array (
             'Brick\\Math\\' => 11,
+            'Barryvdh\\elFinderFlysystemDriver\\' => 33,
             'Barryvdh\\Snappy\\' => 16,
+            'Barryvdh\\Elfinder\\' => 18,
             'Balping\\JsonRaw\\' => 16,
         ),
         'A' => 
@@ -500,6 +507,10 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
@@ -543,6 +554,10 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'League\\Glide\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/glide/src',
+        ),
+        'League\\Flysystem\\Cached\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -704,6 +719,10 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
         ),
+        'Collective\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
+        ),
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
@@ -712,9 +731,17 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
+        'Barryvdh\\elFinderFlysystemDriver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src',
+        ),
         'Barryvdh\\Snappy\\' => 
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src',
+        ),
+        'Barryvdh\\Elfinder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src',
         ),
         'Balping\\JsonRaw\\' => 
         array (
@@ -740,6 +767,13 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
             'Mockery' => 
             array (
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
+            ),
+        ),
+        'K' => 
+        array (
+            'Kris\\LaravelFormBuilder' => 
+            array (
+                0 => __DIR__ . '/..' . '/kris/laravel-form-builder/src',
             ),
         ),
         'H' => 
@@ -770,6 +804,7 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'App\\Http\\Controllers\\GeoChartsController' => __DIR__ . '/../..' . '/app/Http/Controllers/GeoChartsController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\LibrariesController' => __DIR__ . '/../..' . '/app/Http/Controllers/LibrariesController.php',
+        'App\\Http\\Controllers\\MenuController' => __DIR__ . '/../..' . '/app/Http/Controllers/MenuController.php',
         'App\\Http\\Controllers\\PusherController' => __DIR__ . '/../..' . '/app/Http/Controllers/PusherController.php',
         'App\\Http\\Controllers\\ReportsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ReportsController.php',
         'App\\Http\\Controllers\\SpatieController' => __DIR__ . '/../..' . '/app/Http/Controllers/SpatieController.php',
@@ -815,6 +850,12 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'Balping\\JsonRaw\\Encoder' => __DIR__ . '/..' . '/balping/json-raw-encoder/src/Encoder.php',
         'Balping\\JsonRaw\\Raw' => __DIR__ . '/..' . '/balping/json-raw-encoder/src/Raw.php',
         'Balping\\JsonRaw\\Replacer' => __DIR__ . '/..' . '/balping/json-raw-encoder/src/Replacer.php',
+        'Barryvdh\\Elfinder\\Connector' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Connector.php',
+        'Barryvdh\\Elfinder\\Console\\PublishCommand' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Console/PublishCommand.php',
+        'Barryvdh\\Elfinder\\Elfinder' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Elfinder.php',
+        'Barryvdh\\Elfinder\\ElfinderController' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/ElfinderController.php',
+        'Barryvdh\\Elfinder\\ElfinderServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/ElfinderServiceProvider.php',
+        'Barryvdh\\Elfinder\\Session\\LaravelSession' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Session/LaravelSession.php',
         'Barryvdh\\Snappy\\Facades\\SnappyImage' => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src/Facades/SnappyImage.php',
         'Barryvdh\\Snappy\\Facades\\SnappyPdf' => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src/Facades/SnappyPdf.php',
         'Barryvdh\\Snappy\\IlluminateSnappyImage' => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src/IlluminateSnappyImage.php',
@@ -824,6 +865,10 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'Barryvdh\\Snappy\\PdfFaker' => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src/PdfFaker.php',
         'Barryvdh\\Snappy\\PdfWrapper' => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src/PdfWrapper.php',
         'Barryvdh\\Snappy\\ServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-snappy/src/ServiceProvider.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Cache\\SessionStore' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Cache/SessionStore.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Driver' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Driver.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Plugin\\GetUrl' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Plugin/GetUrl.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Plugin\\HasDir' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Plugin/HasDir.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
         'Brick\\Math\\BigNumber' => __DIR__ . '/..' . '/brick/math/src/BigNumber.php',
@@ -913,6 +958,13 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'CategoriesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoriesTableSeeder.php',
+        'Collective\\Html\\Componentable' => __DIR__ . '/..' . '/laravelcollective/html/src/Componentable.php',
+        'Collective\\Html\\Eloquent\\FormAccessible' => __DIR__ . '/..' . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
+        'Collective\\Html\\FormBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/FormBuilder.php',
+        'Collective\\Html\\FormFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/FormFacade.php',
+        'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
+        'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
+        'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'Complex\\Complex' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Complex.php',
         'Complex\\Exception' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Exception.php',
         'Composer\\Autoload\\AutoloadGenerator' => __DIR__ . '/..' . '/composer/composer/src/Composer/Autoload/AutoloadGenerator.php',
@@ -2245,6 +2297,7 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'FormBuilderTestCase' => __DIR__ . '/..' . '/kris/laravel-form-builder/tests/FormBuilderTestCase.php',
         'Fruitcake\\Cors\\CorsServiceProvider' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/CorsServiceProvider.php',
         'Fruitcake\\Cors\\HandleCors' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/HandleCors.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
@@ -3593,6 +3646,52 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'Knp\\Snappy\\GeneratorInterface' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/GeneratorInterface.php',
         'Knp\\Snappy\\Image' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/Image.php',
         'Knp\\Snappy\\Pdf' => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy/Pdf.php',
+        'Kris\\LaravelFormBuilder\\Console\\FormGenerator' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Console/FormGenerator.php',
+        'Kris\\LaravelFormBuilder\\Console\\FormMakeCommand' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Console/FormMakeCommand.php',
+        'Kris\\LaravelFormBuilder\\Events\\AfterCollectingFieldRules' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Events/AfterCollectingFieldRules.php',
+        'Kris\\LaravelFormBuilder\\Events\\AfterFieldCreation' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Events/AfterFieldCreation.php',
+        'Kris\\LaravelFormBuilder\\Events\\AfterFormCreation' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Events/AfterFormCreation.php',
+        'Kris\\LaravelFormBuilder\\Events\\AfterFormValidation' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Events/AfterFormValidation.php',
+        'Kris\\LaravelFormBuilder\\Events\\BeforeFormValidation' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Events/BeforeFormValidation.php',
+        'Kris\\LaravelFormBuilder\\Facades\\FormBuilder' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Facades/FormBuilder.php',
+        'Kris\\LaravelFormBuilder\\Field' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Field.php',
+        'Kris\\LaravelFormBuilder\\Fields\\ButtonGroupType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/ButtonGroupType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\ButtonType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/ButtonType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\CheckableType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/CheckableType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\ChildFormType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/ChildFormType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\ChoiceType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/ChoiceType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\CollectionType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/CollectionType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\EntityType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/EntityType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\FormField' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/FormField.php',
+        'Kris\\LaravelFormBuilder\\Fields\\InputType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/InputType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\ParentType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/ParentType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\RepeatedType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/RepeatedType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\SelectType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/SelectType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\StaticType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/StaticType.php',
+        'Kris\\LaravelFormBuilder\\Fields\\TextareaType' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Fields/TextareaType.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\BaseName' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/BaseName.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\HtmlEntities' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/HtmlEntities.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\Integer' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/Integer.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\Lowercase' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/Lowercase.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\PregReplace' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/PregReplace.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\StripNewlines' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/StripNewlines.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\StripTags' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/StripTags.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\Trim' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/Trim.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\Uppercase' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/Uppercase.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Collection\\XSS' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Collection/XSS.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Exception\\FilterAlreadyBindedException' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Exception/FilterAlreadyBindedException.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Exception\\InvalidInstanceException' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Exception/InvalidInstanceException.php',
+        'Kris\\LaravelFormBuilder\\Filters\\Exception\\UnableToResolveFilterException' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/Exception/UnableToResolveFilterException.php',
+        'Kris\\LaravelFormBuilder\\Filters\\FilterInterface' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/FilterInterface.php',
+        'Kris\\LaravelFormBuilder\\Filters\\FilterResolver' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Filters/FilterResolver.php',
+        'Kris\\LaravelFormBuilder\\Form' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Form.php',
+        'Kris\\LaravelFormBuilder\\FormBuilder' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/FormBuilder.php',
+        'Kris\\LaravelFormBuilder\\FormBuilderServiceProvider' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/FormBuilderServiceProvider.php',
+        'Kris\\LaravelFormBuilder\\FormBuilderTrait' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/FormBuilderTrait.php',
+        'Kris\\LaravelFormBuilder\\FormHelper' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/FormHelper.php',
+        'Kris\\LaravelFormBuilder\\Rules' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Rules.php',
+        'Kris\\LaravelFormBuilder\\RulesParser' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/RulesParser.php',
+        'Kris\\LaravelFormBuilder\\Traits\\ValidatesWhenResolved' => __DIR__ . '/..' . '/kris/laravel-form-builder/src/Kris/LaravelFormBuilder/Traits/ValidatesWhenResolved.php',
         'Larapack\\DoctrineSupport\\Column' => __DIR__ . '/..' . '/larapack/doctrine-support/src/Column.php',
         'Larapack\\DoctrineSupport\\Connections\\MySqlConnection' => __DIR__ . '/..' . '/larapack/doctrine-support/src/Connections/MySqlConnection.php',
         'Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider' => __DIR__ . '/..' . '/larapack/doctrine-support/src/DoctrineSupportServiceProvider.php',
@@ -3875,6 +3974,17 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'League\\Flysystem\\Adapter\\Polyfill\\StreamedTrait' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php',
         'League\\Flysystem\\Adapter\\Polyfill\\StreamedWritingTrait' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Polyfill/StreamedWritingTrait.php',
         'League\\Flysystem\\Adapter\\SynologyFtp' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/SynologyFtp.php',
+        'League\\Flysystem\\Cached\\CacheInterface' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/CacheInterface.php',
+        'League\\Flysystem\\Cached\\CachedAdapter' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/CachedAdapter.php',
+        'League\\Flysystem\\Cached\\Storage\\AbstractCache' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/AbstractCache.php',
+        'League\\Flysystem\\Cached\\Storage\\Adapter' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Adapter.php',
+        'League\\Flysystem\\Cached\\Storage\\Memcached' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Memcached.php',
+        'League\\Flysystem\\Cached\\Storage\\Memory' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Memory.php',
+        'League\\Flysystem\\Cached\\Storage\\Noop' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Noop.php',
+        'League\\Flysystem\\Cached\\Storage\\PhpRedis' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/PhpRedis.php',
+        'League\\Flysystem\\Cached\\Storage\\Predis' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Predis.php',
+        'League\\Flysystem\\Cached\\Storage\\Psr6Cache' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Psr6Cache.php',
+        'League\\Flysystem\\Cached\\Storage\\Stash' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Stash.php',
         'League\\Flysystem\\Config' => __DIR__ . '/..' . '/league/flysystem/src/Config.php',
         'League\\Flysystem\\ConfigAwareTrait' => __DIR__ . '/..' . '/league/flysystem/src/ConfigAwareTrait.php',
         'League\\Flysystem\\ConnectionErrorException' => __DIR__ . '/..' . '/league/flysystem/src/ConnectionErrorException.php',
@@ -5308,6 +5418,10 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'Prophecy\\Prophet' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Prophet.php',
         'Prophecy\\Util\\ExportUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php',
         'Prophecy\\Util\\StringUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/StringUtil.php',
+        'Psr\\Cache\\CacheException' => __DIR__ . '/..' . '/psr/cache/src/CacheException.php',
+        'Psr\\Cache\\CacheItemInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemInterface.php',
+        'Psr\\Cache\\CacheItemPoolInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemPoolInterface.php',
+        'Psr\\Cache\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/cache/src/InvalidArgumentException.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
@@ -5612,6 +5726,7 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
+        'RecursiveCallbackFilterIterator' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeLocalFileSystem.class.php',
         'RolesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/RolesTableSeeder.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
@@ -6697,6 +6812,7 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'TCG\\Voyager\\Widgets\\PageDimmer' => __DIR__ . '/..' . '/tcg/voyager/src/Widgets/PageDimmer.php',
         'TCG\\Voyager\\Widgets\\PostDimmer' => __DIR__ . '/..' . '/tcg/voyager/src/Widgets/PostDimmer.php',
         'TCG\\Voyager\\Widgets\\UserDimmer' => __DIR__ . '/..' . '/tcg/voyager/src/Widgets/UserDimmer.php',
+        'TestModel' => __DIR__ . '/..' . '/kris/laravel-form-builder/tests/FormBuilderTestCase.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
         'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
@@ -6795,6 +6911,38 @@ class ComposerStaticInita572bdbbe24dad95938d95cc50fe57eb
         'ZipStream\\Option\\Version' => __DIR__ . '/..' . '/maennchen/zipstream-php/src/Option/Version.php',
         'ZipStream\\Stream' => __DIR__ . '/..' . '/maennchen/zipstream-php/src/Stream.php',
         'ZipStream\\ZipStream' => __DIR__ . '/..' . '/maennchen/zipstream-php/src/ZipStream.php',
+        'elFinder' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinder.class.php',
+        'elFinderAbortException' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinder.class.php',
+        'elFinderConnector' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderConnector.class.php',
+        'elFinderEditor' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/editor.php',
+        'elFinderEditorOnlineConvert' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/OnlineConvert/editor.php',
+        'elFinderEditorZipArchive' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/ZipArchive/editor.php',
+        'elFinderEditorZohoOffice' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/ZohoOffice/editor.php',
+        'elFinderLibGdBmp' => __DIR__ . '/..' . '/studio-42/elfinder/php/libs/GdBmp.php',
+        'elFinderPlugin' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderPlugin.php',
+        'elFinderPluginAutoResize' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/AutoResize/plugin.php',
+        'elFinderPluginAutoRotate' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/AutoRotate/plugin.php',
+        'elFinderPluginNormalizer' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/Normalizer/plugin.php',
+        'elFinderPluginSanitizer' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/Sanitizer/plugin.php',
+        'elFinderPluginWatermark' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/Watermark/plugin.php',
+        'elFinderSession' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderSession.php',
+        'elFinderSessionInterface' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderSessionInterface.php',
+        'elFinderTriggerException' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinder.class.php',
+        'elFinderVolumeBox' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeBox.class.php',
+        'elFinderVolumeDriver' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeDriver.class.php',
+        'elFinderVolumeDropbox' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeDropbox.class.php',
+        'elFinderVolumeDropbox2' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeDropbox2.class.php',
+        'elFinderVolumeFTP' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeFTP.class.php',
+        'elFinderVolumeFlysystem' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/elFinderVolumeFlysystem.php',
+        'elFinderVolumeFlysystemGoogleDriveCache' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderFlysystemGoogleDriveNetmount.php',
+        'elFinderVolumeFlysystemGoogleDriveNetmount' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderFlysystemGoogleDriveNetmount.php',
+        'elFinderVolumeGoogleDrive' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeGoogleDrive.class.php',
+        'elFinderVolumeGroup' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeGroup.class.php',
+        'elFinderVolumeLocalFileSystem' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeLocalFileSystem.class.php',
+        'elFinderVolumeMySQL' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeMySQL.class.php',
+        'elFinderVolumeOneDrive' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeOneDrive.class.php',
+        'elFinderVolumeTrash' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeTrash.class.php',
+        'elFinderVolumeTrashMySQL' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeTrashMySQL.class.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',

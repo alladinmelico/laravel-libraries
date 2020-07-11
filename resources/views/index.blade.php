@@ -90,6 +90,28 @@
                     <p class="card-text"><a href="https://docs.spatie.be/menu/v2/introduction/">Reference</a></p>
                 </div>
             </div>
+
+            <div class="card w-25 m-2">
+            <a href="{{ route('menu.index') }}"><img class="card-img-top"
+                    src="https://quickadminpanel.com/blog/wp-content/uploads/2017/05/Screen-Shot-2017-05-24-at-2.12.37-PM-1024x538.png" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h4 class="card-title">barryvdh laravel-elfinder</h4>
+                    <p>elFinder is an open-source file manager for web, written in JavaScript using jQuery UI.
+                        As you can see its creation is inspired by simplicity and convenience of Finder program used in Mac OS X operating system</p>
+                    <p class="card-text"><a href="https://github.com/barryvdh/laravel-elfinder">Reference</a></p>
+                </div>
+            </div>
+
+            <div class="card w-25 m-2">
+            <a href="{{ route('song.create') }}"><img class="card-img-top"
+                    src="https://cdn.educba.com/academy/wp-content/uploads/2020/06/Laravel-Form-Builder.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h4 class="card-title">kris laravel-form builder</h4>
+                    <p>Form builder for Laravel 5 inspired by Symfony's form builder.
+                        With help of Laravels FormBuilder class creates forms that can be easy modified and reused. By default it supports Bootstrap 3.</p>
+                    <p class="card-text"><a href="https://github.com/kristijanhusak/laravel-form-builder">Reference</a></p>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

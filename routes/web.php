@@ -30,3 +30,21 @@ Route::get('test', function () {
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
+
+Route::get('glide/{path}', function($path){
+    $server = \League\Glide\ServerFactory::create([
+        'source' => app('filesystem')->disk('public')->getDriver(),
+    'cache' => storage_path('glide'),
+    ]);
+    return $server->getImageResponse($path, Input::query());
+})->where('path', '.+');
+
+Route::get('songs/create', [
+    'uses' => 'SongsController@create',
+    'as' => 'song.create'
+]);
+
+Route::post('songs', [
+    'uses' => 'SongsController@store',
+    'as' => 'song.store'
+]);

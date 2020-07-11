@@ -178,6 +178,8 @@ return [
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         Jimmyjs\ReportGenerator\ServiceProvider::class,
         Spatie\Menu\Laravel\MenuServiceProvider::class,
+        Barryvdh\Elfinder\ElfinderServiceProvider::class,
+        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class
     ],
 
     /*
@@ -235,6 +237,7 @@ return [
         'ExcelReport' => Jimmyjs\ReportGenerator\Facades\ExcelReportFacade::class,
         'CSVReport' => Jimmyjs\ReportGenerator\Facades\CSVReportFacade::class,
         'Menu' => Spatie\Menu\Laravel\Facades\Menu::class,
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class
     ],
 
 ];
